@@ -1,7 +1,17 @@
 function addByX(x) {
   // Start coding here
+ return function addByY(y) {
+  return x + y
+ }
 }
+const addByTwo = addByX(2)
+console.log(addByTwo(1));
+console.log(addByTwo(2));
+console.log(addByTwo(3));
 
+const addByThree = addByX(3);
+console.log(addByThree(1));
+console.log(addByThree(2));
 // Uncomment โค้ดด้านล่างเพื่อดูผลลัพธ์ของการทำงาน
 
 // const addByTwo = addByX(2);
